@@ -1,0 +1,169 @@
+/** Gobals **/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /*Fonts styles
+    --ff-primary: ;
+    --ff-secondary:;
+    */
+  /*Font weights*/
+  /*Font sizes*/
+  --fs-h1: 4rem;
+  --fs-h2: 3.5rem;
+  --fs-h3: 2.25rem;
+  --fs-body: 1.75rem;
+  --fs-btn: 1.5rem;
+  /*colors*/
+  --clr-light: #FFFFFF;
+  --clr-dark: #1C1C1C;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: 'Oswald', sans-serif;
+  line-height: 1.4;
+}
+
+body {
+  font-size: var(--fs-body);
+  background: linear-gradient(45deg, #d36be3 0%, #91effa 90%, #89fffd 100%);
+}
+
+.container {
+  max-width: 1400px;
+  min-height: 100vh;
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    /*Font sizes*/
+    --fs-h1: 5rem;
+    --fs-h2: 4rem;
+    --fs-h3: 2.5rem;
+    --fs-body: 2rem;
+    --fs-btn: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    /*Font sizes*/
+    --fs-h1: 6rem;
+    --fs-h2: 5rem;
+    --fs-h3: 2.5rem;
+    --fs-pts: 4rem;
+    --fs-body: 2rem;
+  }
+}
+
+/***Utilities**/
+.hidden {
+  display: none;
+}
+
+/****** Calculator main ******/
+.calculator {
+  max-width: 100%;
+  background-color: #c0c0c0;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 2.5rem 0 #000000;
+          box-shadow: 0 0 2.5rem 0 #000000;
+}
+
+.calculator .calculator-display {
+  background-color: #201f2b;
+  padding: 1.5rem;
+  min-height: 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calculator .calculator-display .previous-operation {
+  font-size: 2rem;
+  color: #ffffff65;
+}
+
+.calculator .calculator-display .current-operation {
+  font-size: 3rem;
+  color: #FFFFFF;
+}
+
+.calculator .calculator-btns {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: (1fr)[5];
+      grid-template-rows: repeat(5, 1fr);
+  grid-gap: 2px;
+}
+
+.calculator .calculator-btns button {
+  font-size: 2.5rem;
+  padding: 1.5rem 3.5rem;
+  border: none;
+  -webkit-transition: background-color 250ms ease;
+  transition: background-color 250ms ease;
+}
+
+.calculator .calculator-btns button:active {
+  background-color: #afafaf;
+}
+
+.calculator .calculator-btns .equal {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  grid-row: 3/6;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 1;
+  grid-column: 4/5;
+  background-color: #ff7300;
+}
+
+.calculator .calculator-btns .equal:active {
+  background-color: #e16500;
+}
+
+.calculator .calculator-btns .operator {
+  background-color: #d6d6d6;
+}
+
+.calculator .calculator-btns .number {
+  background-color: #f1f1f1;
+}
+/*# sourceMappingURL=styles.css.map */

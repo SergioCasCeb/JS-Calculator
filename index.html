@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS-Calculator</title>
+
+    <link rel="stylesheet" href="./css/styles.css">
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet"> 
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="calculator-display">
+                <div class="previous-operation" data-previous-operation></div>
+                <div class="current-operation" data-current-operation>0</div>
+            </div>
+
+            <div class="calculator-btns">
+                <button class="plus operator" data-operation>+</button>
+                <button class="minus operator" data-operation>-</button>
+                <button class="times operator" data-operation>&times;</button>
+                <button class="divide operator" data-operation>&div;</button>
+                <button class="number one" data-number>1</button>
+                <button class="number two" data-number>2</button>
+                <button class="number three" data-number>3</button>
+                <button class="delete" data-delete>DEL</button>
+                <button class="number four" data-number>4</button>
+                <button class="number five" data-number>5</button>
+                <button class="number six" data-number>6</button>
+                <button class="number seven" data-number>7</button>
+                <button class="number eight" data-number>8</button>
+                <button class="number nine" data-number>9</button>
+                <button class="number decimal" data-number>.</button>
+                <button class="number cero" data-number>0</button>
+                <button class="number clear" data-all-clear>AC</button>
+                <button class="equal" data-equal>=</button>
+
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="./js/main.js"></script>
+</body>
+</html>
