@@ -124,6 +124,3 @@ function calculate(previousDisplayValue, currentDisplayValue, operator){
     }
     return result
 }
-
-
-
